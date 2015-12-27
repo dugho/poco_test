@@ -1,0 +1,32 @@
+﻿빌드 시작: 2015-12-28 오전 1:31:09
+     1>2 노드의 "C:\dev\c\play\poco_test\poco_test\poco_test.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "x64\Debug\poco_test.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         모든 출력이 최신 상태입니다.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt poco_test.cpp
+         poco_test.cpp
+       ManifestResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\dev\c\play\poco_test\x64\Debug\poco_test.exe" /INCREMENTAL /NOLOGO PocoFoundationd.lib PocoNetd.lib PocoUtild.lib PocoXMLd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\poco_test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\dev\c\play\poco_test\x64\Debug\poco_test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\dev\c\play\poco_test\x64\Debug\poco_test.lib" /MACHINE:X64 x64\Debug\poco_test.exe.embed.manifest.res
+         x64\Debug\ErrorHandlingAndDebugging.obj
+         x64\Debug\MemoryManagement.obj
+         x64\Debug\MyException.obj
+         x64\Debug\poco_test.obj
+         x64\Debug\stdafx.obj
+         poco_test.vcxproj -> C:\dev\c\play\poco_test\x64\Debug\poco_test.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"x64\Debug\poco_test.exe.embed.manifest" /manifest x64\Debug\poco_test.exe.intermediate.manifest
+         모든 출력이 최신 상태입니다.
+       LinkEmbedManifest:
+         모든 출력이 최신 상태입니다.
+         poco_test.vcxproj -> C:\dev\c\play\poco_test\x64\Debug\poco_test.exe
+       FinalizeBuildStatus:
+         "x64\Debug\poco_test.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "x64\Debug\poco_test.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\dev\c\play\poco_test\poco_test\poco_test.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:03.63

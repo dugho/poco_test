@@ -3,10 +3,15 @@
 
 #include "stdafx.h"
 #include "ErrorHandlingAndDebugging.h"
+#include "MemoryManagement.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
-	f2();
+	//-- MemoryManagement --//
+	rco_test();
+
+	//-- ErrorHandlingAndDebugging --//
+	//f2();
 	//assertionTest();
 	//myExceptionTest();
 	//exceptionTest();

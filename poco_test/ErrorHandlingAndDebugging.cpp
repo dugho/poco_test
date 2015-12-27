@@ -8,6 +8,7 @@ void f1()
 	poco_ndc (f1);
 
 	Poco::NDC::current().dump(std::cout);
+
 	Poco::Debugger::enter("hello debugger...");
 }
 
