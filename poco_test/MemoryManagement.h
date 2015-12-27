@@ -1,15 +1,40 @@
 #ifndef MemoryManagement_INCLUDED
 #define MemoryManagement_INCLUDED
 
+#include "Poco/RefCountedObject.h"
+#include "Poco/AutoPtr.h"
+#include <iostream>
+
+using Poco::RefCountedObject;
+using Poco::AutoPtr;
+
+void ReferencCountedObject_test();
+
+class ReferencCountedObject: public RefCountedObject
+{
+public:
+	ReferencCountedObject()
+	{}
+
+	void greet() const
+	{
+		std::cout << "Hello, world!" << std::endl;
+	}
+
+protected:
+	~ReferencCountedObject()
+	{}
+};
+
 #include "Poco/AutoPtr.h"
 using Poco::AutoPtr;
 
-void rco_test();
+void ReferencCounting_test();
 
-class RCO
+class ReferencCounting
 {
 public:
-	RCO(): _refCount(1)
+	ReferencCounting(): _refCount(1)
 	{}
 	void duplicate()
 	{

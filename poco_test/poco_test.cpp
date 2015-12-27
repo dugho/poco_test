@@ -8,7 +8,9 @@
 int _tmain(int argc, _TCHAR* argv[])
 {	
 	//-- MemoryManagement --//
-	rco_test();
+	//---> AutoPtr Operators and Semantics
+	//ReferencCountedObject_test();
+	//ReferencCounting_test();
 
 	//-- ErrorHandlingAndDebugging --//
 	//f2();
