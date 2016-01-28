@@ -1,12 +1,21 @@
 #ifndef MemoryManagement_INCLUDED
 #define MemoryManagement_INCLUDED
 
+#include "Poco/AutoReleasePool.h"
+using Poco::AutoReleasePool;
+
+void testAutoReleasePool();
+
+
 #include "Poco/RefCountedObject.h"
 #include "Poco/AutoPtr.h"
 #include <iostream>
 
 using Poco::RefCountedObject;
 using Poco::AutoPtr;
+
+void assignAutoPtr2PlainPtr();
+void cast_test();
 
 void ReferencCountedObject_test();
 
