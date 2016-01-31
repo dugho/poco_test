@@ -8,8 +8,18 @@
 int _tmain(int argc, _TCHAR* argv[])
 {	
 	//-- MemoryManagement --//
-	// AutoPtr Operators and Semantics
-	assignAutoPtr2PlainPtr();
+	//- Dynamic Class Factory
+	testDynamicFactoryInstanciator();
+	//testDynamicFactory();
+
+	//- SharedPtr Operators and Semantics
+	//testArrayRelease();
+	//testCastOfSharedPtr();
+	//testSharedPtr();
+
+	//- AutoPtr Operators and Semantics
+	//testAutoReleasePool();
+	//assignAutoPtr2PlainPtr();
 	//cast_test();
 	//ReferencCountedObject_test();
 	//ReferencCounting_test();

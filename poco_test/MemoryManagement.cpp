@@ -1,8 +1,121 @@
 #include "MemoryManagement.h"
 
+void testDynamicFactoryInstanciator()
+{
+	class Base	{};
+	class A: public Base {};
+	class C: public Base {
+	public:
+		C(int i): _i(i)	{}
+	private:
+		int _i;
+	};
+
+	class CInstantiator: public AbstractInstantiator<Base>
+	{
+	public:
+		CInstantiator(int i): _i(i)	{}
+		Base* createInstance() const
+		{
+			return new C(_i);
+		}
+	private:
+		int _i;
+	};
+
+	DynamicFactory<Base> factory;
+	factory.registerClass<A>("A");
+	factory.registerClass("C", new CInstantiator(42));
+}
+void testDynamicFactory()
+{
+	class Base	{};
+	class A: public Base {};
+	class B: public Base {};
+
+	DynamicFactory<Base> factory;
+	factory.registerClass<A>("Ace"); // creates Instantiator<A, Base>
+	factory.registerClass<B>("B"); // creates Instantiator<B, Base>
+	SharedPtr<Base> pA = factory.createInstance("Ace");
+	SharedPtr<Base> pB = factory.createInstance("B");
+	// you can unregister classes
+	factory.unregisterClass("B");
+	// you can also check for the existence of a class
+	bool haveA = factory.isClass("Ace"); // true
+	bool haveB = factory.isClass("B"); // false (unregistered)
+	bool haveC = factory.isClass("C"); // false (never registered)
+}
+
+void testArrayRelease()
+{	
+	char* pStr = new char[100];
+	SharedPtr<char, Poco::ReferenceCounter, Poco::ReleaseArrayPolicy<char>> p(pStr);
+}
+void testCastOfSharedPtr()
+{
+	class A
+	{
+	public:
+		virtual ~A()
+		{}
+	};
+	class B: public A
+	{
+	};
+	class C: public A
+	{
+	};
+
+	Poco::SharedPtr<A> pA;
+	Poco::SharedPtr<B> pB(new B);
+ 	pA = pB; // okay, pB is a subclass of pA
+ 	pA = new B;
+ 
+ 	// pB = pA; // will not compile
+ 	pB = pA.cast<B>(); // okay
+ 	Poco::SharedPtr<C> pC(new C);
+ 	// pB = pC.cast<B>(); // pB is null --> NOT COMPILE
+}
+void testSharedPtr()
+{
+	std::string* pString = new std::string("Hello, World!!");
+
+	Poco::SharedPtr<std::string> p1(pString);
+	std::cout << "referenceCount of p1 = " << p1.referenceCount() << std::endl << std::endl;
+
+	Poco::SharedPtr<std::string> p2(p1);
+	std::cout << "referenceCount of p1 = " << p1.referenceCount() << std::endl;
+	std::cout << "referenceCount of p2 = " << p2.referenceCount() << std::endl << std::endl;
+
+	p2 = 0;
+	std::cout << "referenceCount of p1 = " << p1.referenceCount() << std::endl;
+	std::cout << "referenceCount of p2 = " << p2.referenceCount() << std::endl << std::endl;
+	//p2 = pString;	// BAD BAD BAD: multiple owners -> multiple delete
+	p2 = p1;
+	std::cout << "referenceCount of p1 = " << p1.referenceCount() << std::endl;
+	std::cout << "referenceCount of p2 = " << p2.referenceCount() << std::endl << std::endl;
+
+	std::string::size_type len = p1->length();
+	std::cout << *p1 << std::endl;
+
+}
 void testAutoReleasePool()
 {
+	class C {
+	public:
+		C(){};
+		void release(){ delete this; }; 
+	};
 
+	AutoReleasePool<C> pool;
+
+	C* pC = new C;
+	pool.add(pC);
+	pC = new C;
+	pool.add(pC);
+	pool.release();
+
+	return;
 }
 
 void assignAutoPtr2PlainPtr()

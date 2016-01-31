@@ -1,6 +1,24 @@
 #ifndef MemoryManagement_INCLUDED
 #define MemoryManagement_INCLUDED
 
+#include "Poco/DynamicFactory.h"
+#include "Poco/SharedPtr.h"
+using Poco::DynamicFactory;
+using Poco::AbstractInstantiator;
+using Poco::SharedPtr;
+
+void testDynamicFactoryInstanciator();
+void testDynamicFactory();
+
+#include <string>
+#include <iostream>
+using Poco::SharedPtr;
+
+void testArrayRelease();
+void testCastOfSharedPtr();
+void testSharedPtr();
+
+
 #include "Poco/AutoReleasePool.h"
 using Poco::AutoReleasePool;
 
