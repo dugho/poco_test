@@ -1,12 +1,41 @@
 #include "MemoryManagement.h"
 
+void testMemoryPool()
+{
+	MemoryPool pool(10); // unlimited number of 1024 byte blocks
+	// MemoryPool pool(1024, 4, 16); // at most 16 blocks; 4 preallocated
+	char* buffer = reinterpret_cast<char*>(pool.get());
+	std::cin.read(buffer, pool.blockSize());
+	std::streamsize n = std::cin.gcount();
+	std::string s(buffer, n);
+	pool.release(buffer);
+
+	std::cout << s << std::endl;
+}
+void testBuffer()
+{
+	Buffer<char> buffer(10);
+
+	std::cin.read(buffer.begin(), buffer.size());
+	std::streamsize n = std::cin.gcount();
+	std::string s(buffer.begin(), n);
+	std::cout << s << std::endl;
+}
+
 void testDynamicFactoryInstanciator()
 {
-	class Base	{};
-	class A: public Base {};
+	class Base	{
+	public:
+		virtual int getC() = 0;
+	};
+	class A: public Base {
+	public:
+		int getC() { return 0; };
+	};
 	class C: public Base {
 	public:
 		C(int i): _i(i)	{}
+		int getC() { return _i; };
 	private:
 		int _i;
 	};
@@ -26,6 +55,11 @@ void testDynamicFactoryInstanciator()
 	DynamicFactory<Base> factory;
 	factory.registerClass<A>("A");
 	factory.registerClass("C", new CInstantiator(42));
+
+	SharedPtr<Base> pA = factory.createInstance("A");
+	SharedPtr<Base> pC = factory.createInstance("C");
+
+	int i = pC->getC();
 }
 void testDynamicFactory()
 {

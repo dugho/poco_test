@@ -8,8 +8,14 @@
 int _tmain(int argc, _TCHAR* argv[])
 {	
 	//-- MemoryManagement --//
+	//- SingletonHolder : refer to MySingleton class in MemoryManagement.h
+
+	//- Buffer Mgt.& Memory Pool
+	//testMemoryPool();
+	//testBuffer();
+
 	//- Dynamic Class Factory
-	testDynamicFactoryInstanciator();
+	//testDynamicFactoryInstanciator();
 	//testDynamicFactory();
 
 	//- SharedPtr Operators and Semantics

@@ -1,6 +1,43 @@
 #ifndef MemoryManagement_INCLUDED
 #define MemoryManagement_INCLUDED
 
+#include "Poco/SingletonHolder.h"
+class MySingleton
+{
+public:
+	MySingleton()
+	{
+		// ...
+	}
+	~MySingleton()
+	{
+		// ...
+	}
+	// ...
+	static MySingleton& instance()
+	{
+		static Poco::SingletonHolder<MySingleton> sh;
+		return *sh.get();
+	}
+};
+
+
+#include "Poco/MemoryPool.h"
+#include <string>
+#include <iostream>
+using Poco::MemoryPool;
+
+void testMemoryPool();
+
+
+#include <Poco/Buffer.h>
+#include <string>
+#include <iostream>
+using Poco::Buffer;
+
+void testBuffer();
+
+
 #include "Poco/DynamicFactory.h"
 #include "Poco/SharedPtr.h"
 using Poco::DynamicFactory;
