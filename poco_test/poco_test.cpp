@@ -5,22 +5,26 @@
 #include "ErrorHandlingAndDebugging.h"
 #include "MemoryManagement.h"
 #include "StringsAndFormatting.h"
+#include "PlatformAndEnvironment.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Platform and Environment --//
+	//testEnvironmentVariables();
+
 	//-- Strings, Text and Formatting --//
-	testString();
-	testCaseInsensitiveComparison();
-	testTranslate();
-	testReplace();
-	testConcatenate();
-	testNumberFormatter();
-	testFormat();
-	testStringTokenizer();
-	testRegularExpression();
-	testTextConverterOfEncodings();
-	testStreamConverter();
-	testTextIterator_UnicodeChar();
+// 	testString();
+// 	testCaseInsensitiveComparison();
+// 	testTranslate();
+// 	testReplace();
+// 	testConcatenate();
+// 	testNumberFormatter();
+// 	testFormat();
+// 	testStringTokenizer();
+// 	testRegularExpression();
+// 	testTextConverterOfEncodings();
+// 	testStreamConverter();
+// 	testTextIterator_UnicodeChar();
 
 	//-- MemoryManagement --//
 	//- SingletonHolder : refer to MySingleton class in MemoryManagement.h
