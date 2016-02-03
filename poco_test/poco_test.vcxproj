@@ -146,6 +146,7 @@
     <ClInclude Include="MemoryManagement.h" />
     <ClInclude Include="MyException.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringsAndFormatting.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
