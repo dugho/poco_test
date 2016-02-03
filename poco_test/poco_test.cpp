@@ -6,9 +6,15 @@
 #include "MemoryManagement.h"
 #include "StringsAndFormatting.h"
 #include "PlatformAndEnvironment.h"
+#include "RandomNumbersAndCryptographicHashes.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Random Numbers and Cryptographical Hashes --//
+// 	testRandom();
+// 	testDigestEngine();
+// 	testDigestStream();
+
 	//-- Platform and Environment --//
 	//testEnvironmentVariables();
 
