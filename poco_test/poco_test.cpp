@@ -7,9 +7,21 @@
 #include "StringsAndFormatting.h"
 #include "PlatformAndEnvironment.h"
 #include "RandomNumbersAndCryptographicHashes.h"
+#include "DateAndTime.h"
+
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Date and Time --//	
+	testTimeStamp();
+	testDateTime();
+	testLocalDateTime();
+	testTimespan();
+	testTimeCalculstion();
+	testTimezone();
+	testDateTimeFormat();
+	testDateTimeParser();
+
 	//-- Random Numbers and Cryptographical Hashes --//
 // 	testRandom();
 // 	testDigestEngine();

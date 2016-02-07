@@ -142,6 +142,7 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DateAndTime.h" />
     <ClInclude Include="ErrorHandlingAndDebugging.h" />
     <ClInclude Include="MemoryManagement.h" />
     <ClInclude Include="MyException.h" />
