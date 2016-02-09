@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="DateAndTime.h" />
     <ClInclude Include="ErrorHandlingAndDebugging.h" />
+    <ClInclude Include="Files.h" />
     <ClInclude Include="MemoryManagement.h" />
     <ClInclude Include="MyException.h" />
     <ClInclude Include="PlatformAndEnvironment.h" />

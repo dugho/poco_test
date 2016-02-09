@@ -8,19 +8,32 @@
 #include "PlatformAndEnvironment.h"
 #include "RandomNumbersAndCryptographicHashes.h"
 #include "DateAndTime.h"
-
+#include "Files.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Files --//
+	testPath();
+	testParsingPath();
+	workingWithPath();
+	testPathOperation();
+	systemSpecificDir();
+	pathAndEnvironmentVar();
+	findFile();
+	testFileOperation();
+	testDirectoryIterator();
+	testGlob();
+	testTemporaryFile();
+
 	//-- Date and Time --//	
-	testTimeStamp();
-	testDateTime();
-	testLocalDateTime();
-	testTimespan();
-	testTimeCalculstion();
-	testTimezone();
-	testDateTimeFormat();
-	testDateTimeParser();
+// 	testTimeStamp();
+// 	testDateTime();
+// 	testLocalDateTime();
+// 	testTimespan();
+// 	testTimeCalculstion();
+// 	testTimezone();
+// 	testDateTimeFormat();
+// 	testDateTimeParser();
 
 	//-- Random Numbers and Cryptographical Hashes --//
 // 	testRandom();
