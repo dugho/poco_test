@@ -147,6 +147,7 @@
     <ClInclude Include="Files.h" />
     <ClInclude Include="MemoryManagement.h" />
     <ClInclude Include="MyException.h" />
+    <ClInclude Include="NotifiationAndEvent.h" />
     <ClInclude Include="PlatformAndEnvironment.h" />
     <ClInclude Include="RandomNumbersAndCryptographicHashes.h" />
     <ClInclude Include="stdafx.h" />

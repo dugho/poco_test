@@ -9,21 +9,27 @@
 #include "RandomNumbersAndCryptographicHashes.h"
 #include "DateAndTime.h"
 #include "Files.h"
+#include "NotifiationAndEvent.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Notification and Event --//
+	testNotificationPolymorphism();
+	testNotificationQueue();
+	testEvent();
+
 	//-- Files --//
-	testPath();
-	testParsingPath();
-	workingWithPath();
-	testPathOperation();
-	systemSpecificDir();
-	pathAndEnvironmentVar();
-	findFile();
-	testFileOperation();
-	testDirectoryIterator();
-	testGlob();
-	testTemporaryFile();
+// 	testPath();
+// 	testParsingPath();
+// 	workingWithPath();
+// 	testPathOperation();
+// 	systemSpecificDir();
+// 	pathAndEnvironmentVar();
+// 	findFile();
+// 	testFileOperation();
+// 	testDirectoryIterator();
+// 	testGlob();
+// 	testTemporaryFile();
 
 	//-- Date and Time --//	
 // 	testTimeStamp();
