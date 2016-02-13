@@ -10,13 +10,23 @@
 #include "DateAndTime.h"
 #include "Files.h"
 #include "NotifiationAndEvent.h"
+#include "Streams.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Streams --//
+	testBase64Encoder();
+	testDeflatingStream();
+	testTeeStream();
+	testOfstream();
+	testBinaryWriter();
+	testBinaryReader();
+	testUnbufferedStreamBuf();
+
 	//-- Notification and Event --//
-	testNotificationPolymorphism();
-	testNotificationQueue();
-	testEvent();
+// 	testNotificationPolymorphism();
+// 	testNotificationQueue();
+// 	testEvent();
 
 	//-- Files --//
 // 	testPath();
