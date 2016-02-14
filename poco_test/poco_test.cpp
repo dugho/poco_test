@@ -12,17 +12,23 @@
 #include "NotifiationAndEvent.h"
 #include "Streams.h"
 #include "Logging.h"
+#include "SharedLibrary.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Shared Libraries --//
+	//testLoadDll();
+	//testSharedLibrary();	// Fali to TEST
+	testClassLader();
+
 	//-- Logging --//
-	testLogger();
-	testSimpleFileChannel();
-	testFileChannel();
-	testAsyncChannel();
-	testSplitterChannel();
-	testLogStream();
-	testFormatter();
+	// 	testLogger();
+	// 	testSimpleFileChannel();
+	// 	testFileChannel();
+	// 	testAsyncChannel();
+	// 	testSplitterChannel();
+	// 	testLogStream();
+	// 	testFormatter();
 
 	//-- Streams --//
 // 	testBase64Encoder();

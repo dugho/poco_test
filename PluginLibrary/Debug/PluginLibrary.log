@@ -1,0 +1,22 @@
+﻿빌드 시작: 2016-02-14 오후 8:39:48
+     1>2 노드의 "H:\dev\play\poco_test\PluginLibrary\PluginLibrary.vcxproj" 프로젝트(rebuild 대상)입니다.
+     1>_PrepareForClean:
+         "Debug\PluginLibrary.lastbuildstate" 파일을 삭제하고 있습니다.
+       InitializeBuildStatus:
+         "Debug\PluginLibrary.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         h:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PLUGINLIBRARY_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\PluginLibrary.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         h:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PLUGINLIBRARY_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\PluginLibrary.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\poco_test\AbstractPlugin.cpp PluginLibrary.cpp
+         PluginLibrary.cpp
+     1>h:\dev\play\poco_test\pluginlibrary\pluginlibrary.cpp(6): fatal error C1083: 포함 파일을 열 수 없습니다. 'AbstractPlugin.h': No such file or directory
+         AbstractPlugin.cpp
+     1>h:\dev\play\poco_test\poco_test\abstractplugin.cpp(4): warning C4627: '#include "AbstractPlugin.h"': 미리 컴파일된 헤더 사용을 찾을 때 건너뛰었습니다.
+                 'StdAfx.h'에 지시문 추가 또는 미리 컴파일된 헤더 다시 빌드
+     1>h:\dev\play\poco_test\poco_test\abstractplugin.cpp(11): fatal error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. '#include "StdAfx.h"'을(를) 소스에 추가하시겠습니까?
+         코드를 생성하고 있습니다...
+     1>"H:\dev\play\poco_test\PluginLibrary\PluginLibrary.vcxproj" 프로젝트를 빌드했습니다(rebuild 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:03.77

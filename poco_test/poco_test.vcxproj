@@ -70,7 +70,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>..\..\..\\open_src\poco-1.4.6p2\Foundation\include;..\..\..\\open_src\poco-1.4.6p2\Util\include;..\..\..\\open_src\poco-1.4.6p2\Net\include;..\..\..\\open_src\poco-1.4.6p2\XML\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\..\\open_src\poco-1.4.6p2\lib64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>..\..\..\\open_src\poco-1.4.6p2\lib64;..\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -98,11 +98,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>PocoFoundationd.lib;PocoNetd.lib;PocoUtild.lib;PocoXMLd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>PocoFoundationd.lib;PocoNetd.lib;PocoUtild.lib;PocoXMLd.lib;TestLibrary.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>H:\dev\play\poco_test\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -151,6 +153,7 @@
     <ClInclude Include="NotifiationAndEvent.h" />
     <ClInclude Include="PlatformAndEnvironment.h" />
     <ClInclude Include="RandomNumbersAndCryptographicHashes.h" />
+    <ClInclude Include="SharedLibrary.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Streams.h" />
     <ClInclude Include="StringsAndFormatting.h" />
