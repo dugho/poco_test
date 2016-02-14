@@ -11,17 +11,27 @@
 #include "Files.h"
 #include "NotifiationAndEvent.h"
 #include "Streams.h"
+#include "Logging.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Logging --//
+	testLogger();
+	testSimpleFileChannel();
+	testFileChannel();
+	testAsyncChannel();
+	testSplitterChannel();
+	testLogStream();
+	testFormatter();
+
 	//-- Streams --//
-	testBase64Encoder();
-	testDeflatingStream();
-	testTeeStream();
-	testOfstream();
-	testBinaryWriter();
-	testBinaryReader();
-	testUnbufferedStreamBuf();
+// 	testBase64Encoder();
+// 	testDeflatingStream();
+// 	testTeeStream();
+// 	testOfstream();
+// 	testBinaryWriter();
+// 	testBinaryReader();
+// 	testUnbufferedStreamBuf();
 
 	//-- Notification and Event --//
 // 	testNotificationPolymorphism();

@@ -145,6 +145,7 @@
     <ClInclude Include="DateAndTime.h" />
     <ClInclude Include="ErrorHandlingAndDebugging.h" />
     <ClInclude Include="Files.h" />
+    <ClInclude Include="Logging.h" />
     <ClInclude Include="MemoryManagement.h" />
     <ClInclude Include="MyException.h" />
     <ClInclude Include="NotifiationAndEvent.h" />
