@@ -13,13 +13,26 @@
 #include "Streams.h"
 #include "Logging.h"
 #include "SharedLibrary.h"
+#include "Multithreading.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Multithreading --//
+// 	testRunnable();
+// 	testRunnableAdapter();
+// 	testThreadPool();
+// 	testThreadLocalStorage();
+// 	testThreadErrorHandler();
+// 	testTimer();
+	testTaskNotification();
+	testActivity();
+	testActiveMethod();
+	testActiveDispatcher();
+
 	//-- Shared Libraries --//
 	//testLoadDll();
 	//testSharedLibrary();	// Fali to TEST
-	testClassLader();
+	//testClassLader();
 
 	//-- Logging --//
 	// 	testLogger();

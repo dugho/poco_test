@@ -69,8 +69,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\..\..\\open_src\poco-1.4.6p2\Foundation\include;..\..\..\\open_src\poco-1.4.6p2\Util\include;..\..\..\\open_src\poco-1.4.6p2\Net\include;..\..\..\\open_src\poco-1.4.6p2\XML\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\..\\open_src\poco-1.4.6p2\lib64;..\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\..\..\open_src\poco-1.4.6p2\Foundation\include;..\..\..\\open_src\poco-1.4.6p2\Util\include;..\..\..\\open_src\poco-1.4.6p2\Net\include;..\..\..\\open_src\poco-1.4.6p2\XML\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\open_src\poco-1.4.6p2\lib64;..\x64\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -149,6 +149,7 @@
     <ClInclude Include="Files.h" />
     <ClInclude Include="Logging.h" />
     <ClInclude Include="MemoryManagement.h" />
+    <ClInclude Include="Multithreading.h" />
     <ClInclude Include="MyException.h" />
     <ClInclude Include="NotifiationAndEvent.h" />
     <ClInclude Include="PlatformAndEnvironment.h" />

@@ -67,8 +67,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>H:\dev\open_src\poco-1.4.6p2\Foundation\include;$(IncludePath)</IncludePath>
-    <LibraryPath>H:\dev\open_src\poco-1.4.6p2\lib64;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\..\..\open_src\poco-1.4.6p2\Foundation\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\open_src\poco-1.4.6p2\lib64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>

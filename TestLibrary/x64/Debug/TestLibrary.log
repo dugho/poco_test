@@ -1,41 +1,41 @@
-﻿빌드 시작: 2016-02-14 오후 5:59:21
-     1>2 노드의 "H:\dev\play\poco_test\TestLibrary\TestLibrary.vcxproj" 프로젝트(rebuild 대상)입니다.
+﻿빌드 시작: 2016-02-17 오후 10:14:03
+     1>2 노드의 "C:\dev\c\play\poco_test\TestLibrary\TestLibrary.vcxproj" 프로젝트(rebuild 대상)입니다.
      1>_PrepareForClean:
          "x64\Debug\TestLibrary.lastbuildstate" 파일을 삭제하고 있습니다.
        InitializeBuildStatus:
          "AlwaysCreate"이(가) 지정되었기 때문에 "x64\Debug\TestLibrary.unsuccessfulbuild"을(를) 만들고 있습니다.
        ClCompile:
-         h:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TESTLIBRARY_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"x64\Debug\TestLibrary.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TESTLIBRARY_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"x64\Debug\TestLibrary.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
          stdafx.cpp
-         h:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TESTLIBRARY_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt dllmain.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TESTLIBRARY_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt dllmain.cpp
          dllmain.cpp
-         h:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TESTLIBRARY_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"x64\Debug\TestLibrary.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt TestLibrary.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TESTLIBRARY_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"x64\Debug\TestLibrary.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt TestLibrary.cpp
          TestLibrary.cpp
        ManifestResourceCompile:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"x64\Debug\TestLibrary.dll.embed.manifest.res" x64\Debug\TestLibrary_manifest.rc 
        Link:
-         h:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"H:\dev\play\poco_test\x64\Debug\TestLibrary.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\TestLibrary.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\dev\play\poco_test\x64\Debug\TestLibrary.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\dev\play\poco_test\x64\Debug\TestLibrary.lib" /MACHINE:X64 /DLL x64\Debug\TestLibrary.dll.embed.manifest.res
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\dev\c\play\poco_test\x64\Debug\TestLibrary.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\TestLibrary.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\dev\c\play\poco_test\x64\Debug\TestLibrary.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\dev\c\play\poco_test\x64\Debug\TestLibrary.lib" /MACHINE:X64 /DLL x64\Debug\TestLibrary.dll.embed.manifest.res
          x64\Debug\dllmain.obj
          x64\Debug\stdafx.obj
          x64\Debug\TestLibrary.obj
-            H:\dev\play\poco_test\x64\Debug\TestLibrary.lib 라이브러리 및 H:\dev\play\poco_test\x64\Debug\TestLibrary.exp 개체를 생성하고 있습니다.
-         TestLibrary.vcxproj -> H:\dev\play\poco_test\x64\Debug\TestLibrary.dll
+            C:\dev\c\play\poco_test\x64\Debug\TestLibrary.lib 라이브러리 및 C:\dev\c\play\poco_test\x64\Debug\TestLibrary.exp 개체를 생성하고 있습니다.
+         TestLibrary.vcxproj -> C:\dev\c\play\poco_test\x64\Debug\TestLibrary.dll
        Manifest:
          "x64\Debug\TestLibrary.dll.embed.manifest" 파일을 삭제하고 있습니다.
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"x64\Debug\TestLibrary.dll.embed.manifest" /manifest x64\Debug\TestLibrary.dll.intermediate.manifest
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"x64\Debug\TestLibrary.dll.embed.manifest.res" x64\Debug\TestLibrary_manifest.rc 
        LinkEmbedManifest:
-         h:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"H:\dev\play\poco_test\x64\Debug\TestLibrary.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\TestLibrary.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\dev\play\poco_test\x64\Debug\TestLibrary.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\dev\play\poco_test\x64\Debug\TestLibrary.lib" /MACHINE:X64 /DLL x64\Debug\TestLibrary.dll.embed.manifest.res
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\dev\c\play\poco_test\x64\Debug\TestLibrary.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\TestLibrary.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\dev\c\play\poco_test\x64\Debug\TestLibrary.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\dev\c\play\poco_test\x64\Debug\TestLibrary.lib" /MACHINE:X64 /DLL x64\Debug\TestLibrary.dll.embed.manifest.res
          x64\Debug\dllmain.obj
          x64\Debug\stdafx.obj
          x64\Debug\TestLibrary.obj
-            H:\dev\play\poco_test\x64\Debug\TestLibrary.lib 라이브러리 및 H:\dev\play\poco_test\x64\Debug\TestLibrary.exp 개체를 생성하고 있습니다.
-         TestLibrary.vcxproj -> H:\dev\play\poco_test\x64\Debug\TestLibrary.dll
+            C:\dev\c\play\poco_test\x64\Debug\TestLibrary.lib 라이브러리 및 C:\dev\c\play\poco_test\x64\Debug\TestLibrary.exp 개체를 생성하고 있습니다.
+         TestLibrary.vcxproj -> C:\dev\c\play\poco_test\x64\Debug\TestLibrary.dll
        FinalizeBuildStatus:
          "x64\Debug\TestLibrary.unsuccessfulbuild" 파일을 삭제하고 있습니다.
          "x64\Debug\TestLibrary.lastbuildstate"에 연결(touching)하고 있습니다.
-     1>"H:\dev\play\poco_test\TestLibrary\TestLibrary.vcxproj" 프로젝트를 빌드했습니다(rebuild 대상).
+     1>"C:\dev\c\play\poco_test\TestLibrary\TestLibrary.vcxproj" 프로젝트를 빌드했습니다(rebuild 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:02.72
+경과 시간: 00:00:06.31
