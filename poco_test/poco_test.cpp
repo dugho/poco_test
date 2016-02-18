@@ -18,12 +18,19 @@
 #include "Processes.h"
 #include "URIandUUID.h"
 #include "XML.h"
+#include "ConfigurationFiles.h"
 
 int _tmain(int argc, _TCHAR* argv[])
-{	//-- XML --//
-	testDOM();
-	createXMLWithDOM();
-	createXMLWithXMLWriter();
+{	
+	//-- Configuration Files --//
+	testIniFileConfiguration();
+	testPropertyFileConfiguration();
+	testXMLConfiguration();
+
+	//-- XML --//
+// 	testDOM();
+// 	createXMLWithDOM();
+// 	createXMLWithXMLWriter();
 
 	//-- URI and UUID --//
 // 	testURI();
