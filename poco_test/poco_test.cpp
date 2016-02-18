@@ -19,13 +19,17 @@
 #include "URIandUUID.h"
 #include "XML.h"
 #include "ConfigurationFiles.h"
+#include "ConfiguringLogging.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Configuring Logging --//
+	testLoggingConfigurator();
+
 	//-- Configuration Files --//
-	testIniFileConfiguration();
-	testPropertyFileConfiguration();
-	testXMLConfiguration();
+// 	testIniFileConfiguration();
+// 	testPropertyFileConfiguration();
+// 	testXMLConfiguration();
 
 	//-- XML --//
 // 	testDOM();

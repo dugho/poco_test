@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClInclude Include="Cache.h" />
     <ClInclude Include="ConfigurationFiles.h" />
+    <ClInclude Include="ConfiguringLogging.h" />
     <ClInclude Include="DateAndTime.h" />
     <ClInclude Include="ErrorHandlingAndDebugging.h" />
     <ClInclude Include="Files.h" />
