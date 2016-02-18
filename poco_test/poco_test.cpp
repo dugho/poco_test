@@ -14,9 +14,14 @@
 #include "Logging.h"
 #include "SharedLibrary.h"
 #include "Multithreading.h"
+#include "Cache.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Cache --//
+	testLRUCache();
+	testUniqueExpirationCache();
+
 	//-- Multithreading --//
 // 	testRunnable();
 // 	testRunnableAdapter();
@@ -24,10 +29,10 @@ int _tmain(int argc, _TCHAR* argv[])
 // 	testThreadLocalStorage();
 // 	testThreadErrorHandler();
 // 	testTimer();
-	testTaskNotification();
-	testActivity();
-	testActiveMethod();
-	testActiveDispatcher();
+// 	testTaskNotification();
+// 	testActivity();
+// 	testActiveMethod();
+// 	testActiveDispatcher();
 
 	//-- Shared Libraries --//
 	//testLoadDll();
