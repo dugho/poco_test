@@ -16,13 +16,19 @@
 #include "Multithreading.h"
 #include "Cache.h"
 #include "Processes.h"
+#include "URIandUUID.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- URI and UUID --//
+	testURI();
+	testURIStreamOpener();
+	testUUID();
+
 	//-- Processes --//
-	testProcess();
-	testFileSharedMemory();
-	testMemoryRegionSharedMemory();
+// 	testProcess();
+// 	testFileSharedMemory();
+// 	testMemoryRegionSharedMemory();
 
 	//-- Hashing : NO Sample Codes --//
 
