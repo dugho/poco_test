@@ -15,12 +15,20 @@
 #include "SharedLibrary.h"
 #include "Multithreading.h"
 #include "Cache.h"
+#include "Processes.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Processes --//
+	testProcess();
+	testFileSharedMemory();
+	testMemoryRegionSharedMemory();
+
+	//-- Hashing : NO Sample Codes --//
+
 	//-- Cache --//
-	testLRUCache();
-	testUniqueExpirationCache();
+// 	testLRUCache();
+// 	testUniqueExpirationCache();
 
 	//-- Multithreading --//
 // 	testRunnable();

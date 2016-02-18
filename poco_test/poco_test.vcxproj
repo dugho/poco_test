@@ -154,6 +154,7 @@
     <ClInclude Include="MyException.h" />
     <ClInclude Include="NotifiationAndEvent.h" />
     <ClInclude Include="PlatformAndEnvironment.h" />
+    <ClInclude Include="Processes.h" />
     <ClInclude Include="RandomNumbersAndCryptographicHashes.h" />
     <ClInclude Include="SharedLibrary.h" />
     <ClInclude Include="stdafx.h" />
