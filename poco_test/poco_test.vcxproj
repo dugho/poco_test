@@ -162,6 +162,7 @@
     <ClInclude Include="StringsAndFormatting.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="URIandUUID.h" />
+    <ClInclude Include="XML.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ErrorHandlingAndDebugging.cpp" />

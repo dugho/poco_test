@@ -17,13 +17,18 @@
 #include "Cache.h"
 #include "Processes.h"
 #include "URIandUUID.h"
+#include "XML.h"
 
 int _tmain(int argc, _TCHAR* argv[])
-{	
+{	//-- XML --//
+	testDOM();
+	createXMLWithDOM();
+	createXMLWithXMLWriter();
+
 	//-- URI and UUID --//
-	testURI();
-	testURIStreamOpener();
-	testUUID();
+// 	testURI();
+// 	testURIStreamOpener();
+// 	testUUID();
 
 	//-- Processes --//
 // 	testProcess();
