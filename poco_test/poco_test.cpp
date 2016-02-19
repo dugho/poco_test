@@ -20,10 +20,19 @@
 #include "XML.h"
 #include "ConfigurationFiles.h"
 #include "ConfiguringLogging.h"
-#include "Applications.h"
-/*
+//#include "Applications.h"
+#include "NetworkProgram.h"
+
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Network Program --//
+// 	testDNS_IPAddress_HostEntry();
+// 	testStreamSocket();
+// 	testServerSocket();
+// 	testUDPSocketClient();
+// 	testUDPSocketServer();
+	//testMulticastSocketClient();	// 에러 발생하네? 좀더 공부해야할 듯..
+
 	//-- Applications --//
 	// 이 기능을 테스트하려면 _tmain을 모두 comment 처리해야 함
 	// 이외의 기능을 테스트하려면 Applications.h를 comment 처리해야 함
@@ -174,4 +183,3 @@ int _tmain(int argc, _TCHAR* argv[])
 	getchar();
 	return 0;
 }
-*/

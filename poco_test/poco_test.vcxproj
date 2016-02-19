@@ -155,6 +155,7 @@
     <ClInclude Include="MemoryManagement.h" />
     <ClInclude Include="Multithreading.h" />
     <ClInclude Include="MyException.h" />
+    <ClInclude Include="NetworkProgram.h" />
     <ClInclude Include="NotifiationAndEvent.h" />
     <ClInclude Include="PlatformAndEnvironment.h" />
     <ClInclude Include="Processes.h" />
