@@ -1,7 +1,7 @@
-﻿빌드 시작: 2016-02-19 오전 12:10:13
+﻿빌드 시작: 2016-02-19 오후 12:44:13
      1>2 노드의 "C:\dev\c\play\poco_test\poco_test\poco_test.vcxproj" 프로젝트(build 대상)입니다.
      1>InitializeBuildStatus:
-         "AlwaysCreate"이(가) 지정되었기 때문에 "x64\Debug\poco_test.unsuccessfulbuild"을(를) 만들고 있습니다.
+         "x64\Debug\poco_test.unsuccessfulbuild"에 연결(touching)하고 있습니다.
        ClCompile:
          모든 출력이 최신 상태입니다.
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt poco_test.cpp
@@ -29,4 +29,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:12.63
+경과 시간: 00:00:13.96

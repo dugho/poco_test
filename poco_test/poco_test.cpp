@@ -20,11 +20,16 @@
 #include "XML.h"
 #include "ConfigurationFiles.h"
 #include "ConfiguringLogging.h"
-
+#include "Applications.h"
+/*
 int _tmain(int argc, _TCHAR* argv[])
 {	
+	//-- Applications --//
+	// 이 기능을 테스트하려면 _tmain을 모두 comment 처리해야 함
+	// 이외의 기능을 테스트하려면 Applications.h를 comment 처리해야 함
+
 	//-- Configuring Logging --//
-	testLoggingConfigurator();
+//	testLoggingConfigurator();
 
 	//-- Configuration Files --//
 // 	testIniFileConfiguration();
@@ -169,3 +174,4 @@ int _tmain(int argc, _TCHAR* argv[])
 	getchar();
 	return 0;
 }
+*/
